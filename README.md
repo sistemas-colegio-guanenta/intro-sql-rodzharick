@@ -75,7 +75,14 @@
 `SELECT COUNT(*) AS precio_articulo FROM tabla_articulo WHERE precio_articulo >= 50000;`
 ![Consulta 10 ]( img/consulta_10.png  "Consulta 10")
 
-11. 11. Obtener el nombre y el precio de los artículos cuyo precio sea igual o mayor a $50000 y ordenarlos descendentemente por precio, y luego ascendentemente por nombre.
+11. Obtener el nombre y el precio de los artículos cuyo precio sea igual o mayor a $50000 y ordenarlos descendentemente por precio, y luego ascendentemente por nombre.
 
 `SELECT id_articulo, precio_articulo FROM tabla_articulo WHERE precio_articulo >= 50000 ORDER BY precio_articulo DESC, id_articulo ASC;`
 ![Consulta 11 ]( img/consulta_11.png  "Consulta 11")
+
+12. Mostrar el listado completo de artículos, incluyendo por cada artículo los datos del artículo y de su fabricante.
+
+`SELECT a.id_articulo, a.nombre_articulo AS tabla_articulo, a.precio_articulo, f.id_fabricante, f.nombre_fabricante AS fabricante FROM tabla_articulo a JOIN tabla_fabricante f ON a.id_fabricante = f.id_fabricante;`
+
+![Consulta 12 ]( img/consulta_12.png  "Consulta 12")
+

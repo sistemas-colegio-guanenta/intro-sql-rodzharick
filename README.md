@@ -74,3 +74,8 @@
 10. Obtener el número de artículos cuyo precio sea mayor o igual a $50000.
 `SELECT COUNT(*) AS precio_articulo FROM tabla_articulo WHERE precio_articulo >= 50000;`
 ![Consulta 10 ]( img/consulta_10.png  "Consulta 10")
+
+11. 11. Obtener el nombre y el precio de los artículos cuyo precio sea igual o mayor a $50000 y ordenarlos descendentemente por precio, y luego ascendentemente por nombre.
+
+`SELECT id_articulo, precio_articulo FROM tabla_articulo WHERE precio_articulo >= 50000 ORDER BY precio_articulo DESC, id_articulo ASC;`
+![Consulta 11 ]( img/consulta_11.png  "Consulta 11")
